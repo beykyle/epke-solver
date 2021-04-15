@@ -115,10 +115,7 @@ def example():
     precursors_a = [Precursor(0.0128, 0.02584e-2), Precursor(0.0318, 0.152e-2),
                   Precursor(0.119, 0.13908e-2), Precursor(0.3181, 0.30704e-2),
                   Precursor(1.4027, 0.1102e-2), Precursor(3.9286, 0.02584e-2)]
-    precursors_b = [Precursor(0.0127, 0.02584e-2), Precursor(0.0318, 0.152e-2),
-                  Precursor(0.119, 0.13908e-2), Precursor(0.3181, 0.30704e-2),
-                  Precursor(1.4027, 0.1102e-2), Precursor(100,0)]
-    precursor_data_sets = [ precursors_a, precursors_b]
+    precursor_data_sets = [ precursors_a]
 
     # read all the other data
     data, rho_PARCS, rel_power = loadData("cr_ejection_parcs.txt" ,  1000)
