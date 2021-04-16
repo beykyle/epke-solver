@@ -97,7 +97,7 @@ def runSolver(exec_fpath, fname):
         print(line.rstrip().decode('utf-8'))
 
 def extract_output(fname):
-    tree = ET.parse('epke_output.xml')
+    tree = ET.parse(fname)
     root = tree.getroot()
 
     for child in root:
